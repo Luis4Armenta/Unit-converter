@@ -36,10 +36,10 @@ public class Vista extends javax.swing.JFrame {
         fromLabel = new javax.swing.JLabel();
         toLabel = new javax.swing.JLabel();
         inputLabel = new javax.swing.JLabel();
-        inputFieldText = new javax.swing.JTextField();
         outputFieldText = new javax.swing.JTextField();
+        inputFieldText = new javax.swing.JTextField();
+        toUnitComboBox = new javax.swing.JComboBox<>();
         fromUnitComboBox = new javax.swing.JComboBox<>();
-        toUnitCombobox = new javax.swing.JComboBox<>();
         convertBtn = new javax.swing.JButton();
         exitBtn = new javax.swing.JButton();
 
@@ -77,6 +77,11 @@ public class Vista extends javax.swing.JFrame {
         mainPanel.setLayout(new java.awt.GridBagLayout());
 
         unitTypesComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Longitud", "Superficie", "Volumen", "Peso", "Velocidad", "Temperatura", " " }));
+        unitTypesComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                unitTypesComboBoxActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -121,7 +126,7 @@ public class Vista extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(6, 8, 6, 8);
         mainPanel.add(inputLabel, gridBagConstraints);
 
-        inputFieldText.setText(" ");
+        outputFieldText.setText(" ");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 2;
@@ -131,11 +136,11 @@ public class Vista extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(6, 8, 8, 5);
-        mainPanel.add(inputFieldText, gridBagConstraints);
+        mainPanel.add(outputFieldText, gridBagConstraints);
 
-        outputFieldText.addActionListener(new java.awt.event.ActionListener() {
+        inputFieldText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                outputFieldTextActionPerformed(evt);
+                inputFieldTextActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -147,9 +152,9 @@ public class Vista extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(6, 8, 8, 5);
-        mainPanel.add(outputFieldText, gridBagConstraints);
+        mainPanel.add(inputFieldText, gridBagConstraints);
 
-        fromUnitComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        toUnitComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 2;
@@ -159,9 +164,9 @@ public class Vista extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(6, 8, 8, 5);
-        mainPanel.add(fromUnitComboBox, gridBagConstraints);
+        mainPanel.add(toUnitComboBox, gridBagConstraints);
 
-        toUnitCombobox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        fromUnitComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 2;
@@ -171,7 +176,7 @@ public class Vista extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(6, 8, 8, 5);
-        mainPanel.add(toUnitCombobox, gridBagConstraints);
+        mainPanel.add(fromUnitComboBox, gridBagConstraints);
 
         convertBtn.setText("Convertir");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -213,9 +218,13 @@ public class Vista extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void outputFieldTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_outputFieldTextActionPerformed
+    private void inputFieldTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputFieldTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_outputFieldTextActionPerformed
+    }//GEN-LAST:event_inputFieldTextActionPerformed
+
+    private void unitTypesComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unitTypesComboBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_unitTypesComboBoxActionPerformed
 
     /**
      * @param args the command line arguments
@@ -266,7 +275,7 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JPanel mainPanel;
     public javax.swing.JTextField outputFieldText;
     private javax.swing.JLabel toLabel;
-    public javax.swing.JComboBox<String> toUnitCombobox;
+    public javax.swing.JComboBox<String> toUnitComboBox;
     public javax.swing.JComboBox unitTypesComboBox;
     // End of variables declaration//GEN-END:variables
 }
