@@ -27,6 +27,8 @@ public class UnitTypesController implements ActionListener{
     public void actionPerformed(ActionEvent e) {
        String unitTypeSelected = this.view.unitTypesComboBox.getSelectedItem().toString();
        
+       this.model.selectUnitType(unitTypeSelected);
+       
        String[] units = this.model.getUnitsFor(unitTypeSelected);
        
        this.view.fromUnitComboBox.removeAllItems();
