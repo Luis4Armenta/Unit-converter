@@ -4,6 +4,7 @@ import model.UnitConverter;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.DecimalFormat;
+import javax.swing.JOptionPane;
 import views.Vista;
 
 
@@ -18,19 +19,26 @@ public class ConvertBtnController implements ActionListener{
     
     @Override
     public void actionPerformed(ActionEvent e) {
-        double inputValue = Double.parseDouble(view.inputFieldText.getText());
-        
-        this.model.setValueToConvert(inputValue);
-        
-        String from = view.fromUnitComboBox.getSelectedItem().toString();
-        String to = view.toUnitComboBox.getSelectedItem().toString();
-        
-        this.model.selectFromUnit(from);
-        this.model.selectToUnit(to);
-        
-        double result = this.model.getConversion();
+        try {
+            double inputValue = Double.parseDouble(view.inputFieldText.getText());
 
-        view.outputFieldText.setText(String.valueOf(new DecimalFormat("#.000").format(result)));
+            this.model.setValueToConvert(inputValue);
+
+            String from = view.fromUnitComboBox.getSelectedItem().toString();
+            String to = view.toUnitComboBox.getSelectedItem().toString();
+
+            this.model.selectFromUnit(from);
+            this.model.selectToUnit(to);
+
+            double result = this.model.getConversion();
+
+            view.outputFieldText.setText(String.valueOf(new DecimalFormat("#.000").format(result)));
+        } catch (Exception error) {
+            if (error instanceof NumberFormatException) {
+                String messageError = "Por favor, introduce únicamente números...";
+                JOptionPane.showMessageDialog(this.view, messageError, "Error", JOptionPane.WARNING_MESSAGE);
+            }
+        }
     }
     
 }
