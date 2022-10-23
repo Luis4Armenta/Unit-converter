@@ -104,16 +104,17 @@ public class UnitConverter {
         longitudes.put("Meters to Feets", new MetersToFeets());
         longitudes.put("Meters to Kilometers", new MetersToKilometers());
         
-        HashMap<String, IConvertionStrategy> weights = new HashMap<>();
-        longitudes.put("Grams to Kilogram", new GramToKilogram());
-        longitudes.put("Grams to Pounds", new GramsToPounds());
-        longitudes.put("Kilograms to Grams", new KilogramToGram());
+        HashMap<String, IConvertionStrategy> weight = new HashMap<>();
+        weight.put("Grams to Kilogram", new GramToKilogram());
+        weight.put("Grams to Pounds", new GramsToPounds());
+        weight.put("Kilograms to Grams", new KilogramToGram());
         
         HashMap<String, IConvertionStrategy> temperature = new HashMap<>();
         temperature.put("Celsius to Kelvin", new CelsiusToKelvin());
         
         this.handlers.put("Longitud", longitudes);
-        this.handlers.put("Peso", weights);
+        this.handlers.put("Peso", weight);
+        this.handlers.put("Temperatura", temperature);
     }
     
 }
