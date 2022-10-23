@@ -14,7 +14,7 @@ public class ExitBtnController implements ActionListener{
         this.view = view;
         this.model = model;
         
-        this.view.exitBtn.addActionListener(this);
+        //this.view.exitBtn.addActionListener(this);
     }
 
     @Override

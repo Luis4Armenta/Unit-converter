@@ -15,14 +15,11 @@ public class ConvertBtnController implements ActionListener{
         this.view = view;
         this.model = model;
         
-        view.convertBtn.addActionListener(this);
+        //view.convertBtn.addActionListener(this);
     }
     
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println(view.fromUnitComboBox.getSelectedItem().toString());
-        System.out.println(view.toUnitComboBox.getSelectedItem().toString());
-        
         double inputValue = Double.parseDouble(view.inputFieldText.getText());
         
         this.model.setValueToConvert(inputValue);
