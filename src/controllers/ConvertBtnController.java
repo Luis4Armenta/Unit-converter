@@ -14,8 +14,6 @@ public class ConvertBtnController implements ActionListener{
     public ConvertBtnController(Vista view, UnitConverter model) {
         this.view = view;
         this.model = model;
-        
-        //view.convertBtn.addActionListener(this);
     }
     
     @Override

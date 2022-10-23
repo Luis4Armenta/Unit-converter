@@ -13,8 +13,6 @@ public class ExitBtnController implements ActionListener{
     public ExitBtnController(Vista view, UnitConverter model) {
         this.view = view;
         this.model = model;
-        
-        //this.view.exitBtn.addActionListener(this);
     }
 
     @Override
