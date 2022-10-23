@@ -9,6 +9,7 @@ import model.strategies.longitude.KilometersToKilometers;
 import model.strategies.longitude.KilometersToMeters;
 import model.strategies.longitude.MetersToFeets;
 import model.strategies.longitude.MetersToKilometers;
+import model.strategies.temperature.CelsiusToKelvin;
 import model.strategies.weight.GramToKilogram;
 import model.strategies.weight.GramsToPounds;
 import model.strategies.weight.KilogramToGram;
@@ -107,6 +108,9 @@ public class UnitConverter {
         longitudes.put("Grams to Kilogram", new GramToKilogram());
         longitudes.put("Grams to Pounds", new GramsToPounds());
         longitudes.put("Kilograms to Grams", new KilogramToGram());
+        
+        HashMap<String, IConvertionStrategy> temperature = new HashMap<>();
+        temperature.put("Celsius to Kelvin", new CelsiusToKelvin());
         
         this.handlers.put("Longitud", longitudes);
         this.handlers.put("Peso", weights);
