@@ -1,4 +1,3 @@
-
 package model.strategies.longitude;
 
 import model.strategies.IConvertionStrategy;
