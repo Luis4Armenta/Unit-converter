@@ -63,7 +63,7 @@ public class UnitConverter {
     }
     
     private void setUnitTypes() {
-        String[] longitudesOptions = {"Kilometro", "Metros", "Centimetros", "Milimeters", 
+        String[] longitudesOptions = {"Kilometros", "Metros", "Centimetros", "Milimeters", 
                             "Miles", "Yards", "Feets", "inches"};
         String[] weightOptions = {"Tons", "Kilograms", "Grams", "Pounds"};
         String[] temperatureOptions = {"Celsius", "Kelvin", "Fahrenheit"};

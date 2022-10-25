@@ -19,6 +19,7 @@ public class ConvertBtnController implements ActionListener{
     
     @Override
     public void actionPerformed(ActionEvent e) {
+        System.out.println("si");
         try {
             double inputValue = Double.parseDouble(view.inputFieldText.getText());
 
@@ -29,8 +30,12 @@ public class ConvertBtnController implements ActionListener{
 
             this.model.selectFromUnit(from);
             this.model.selectToUnit(to);
-
+            
+            this.model.setValueToConvert(inputValue);
+            
             double result = this.model.getConversion();
+            
+            System.out.println("es :"+result);
 
             view.outputFieldText.setText(String.valueOf(new DecimalFormat("#.000").format(result)));
         } catch (Exception error) {
