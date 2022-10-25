@@ -27,8 +27,8 @@ public class IndexController {
     }
     
     private void setDefaultSettings() {
-        //this.model.selectUnitType("Longitud");
-        //this.view.unitTypesComboBox.setSelectedItem("Longitud");
+        this.model.selectUnitType("Longitud");
+        this.view.unitTypesComboBox.setSelectedItem("Longitud");
         
         String first = this.view.unitTypesComboBox.getSelectedItem().toString();
         this.model.selectUnitType(first);
