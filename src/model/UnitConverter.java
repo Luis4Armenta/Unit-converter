@@ -76,5 +76,6 @@ public class UnitConverter {
     private void loadRates() {
         this.conversionRates.put("Kilometros-Metros", new Double(1000));
         this.conversionRates.put("Kilometros-centimetros", new Double(1000 * 100));
+        this.conversionRates.put("Kilometros-Millas", new Double(1/1.609))
     }
 }
