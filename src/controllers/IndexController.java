@@ -1,17 +1,19 @@
 package controllers;
 
+import javax.swing.DefaultComboBoxModel;
 import model.UnitConverter;
 import views.Vista;
 
 public class IndexController {
-    private UnitConverter model;
-    private Vista view;
+    private final UnitConverter model;
+    private final Vista view;
     
     public IndexController(Vista view, UnitConverter model) {
         this.model = model;
         this.view = view;
         
         this.setComportamentOfComponents();
+        this.setDefaultSettings();
     }
     
     private void setComportamentOfComponents() {
@@ -22,5 +24,18 @@ public class IndexController {
         this.view.unitTypesComboBox.addActionListener(unitTypesComboBoxController);
         this.view.convertBtn.addActionListener(convertBtnController);
         this.view.exitBtn.addActionListener(exitbtnController);
+    }
+    
+    private void setDefaultSettings() {
+        String first = this.view.unitTypesComboBox.getSelectedItem().toString();
+        this.model.selectUnitType(first);
+        
+        String[] units = this.model.getUnits();
+        
+        this.view.fromUnitComboBox.removeAllItems();
+        this.view.fromUnitComboBox.setModel(new DefaultComboBoxModel<>(units));
+        
+        this.view.toUnitComboBox.removeAllItems();
+        this.view.toUnitComboBox.setModel(new DefaultComboBoxModel<>(units));
     }
 }

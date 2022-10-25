@@ -38,8 +38,8 @@ public class UnitConverter {
     private IConvertionStrategy strategy;
 
     public UnitConverter() {
-        this.unitTypeSelected = "Longitud";
         this.init();
+        this.unitTypeSelected = "Longitud";
         this.strategy = new KilometersToKilometers();
     }
     
