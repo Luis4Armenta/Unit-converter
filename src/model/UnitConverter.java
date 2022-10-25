@@ -80,8 +80,8 @@ public class UnitConverter {
         return arr;
     }
     
-    public String[] getUnitsFor(String unitType) {
-        return this.unitTypes.get((unitType));
+    public String[] getUnits() {
+        return this.unitTypes.get((this.unitTypeSelected));
     }
     
     private void init() {
