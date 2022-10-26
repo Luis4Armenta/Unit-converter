@@ -63,9 +63,9 @@ public class UnitConverter {
     }
     
     private void setUnitTypes() {
-        String[] longitudesOptions = {"Kilometros", "Metros", "Centimetros", "Milimeters", 
-                            "Miles", "Yards", "Feets", "inches"};
-        String[] weightOptions = {"Tons", "Kilograms", "Grams", "Pounds"};
+        String[] longitudesOptions = {"Kilometros", "Metros", "Centimetros", "Milimetros", 
+                            "Millas", "Yardas", "Pies", "Pulgadas"};
+        String[] weightOptions = {"Toneladas", "Kilograms", "Gramos"};
         String[] temperatureOptions = {"Celsius", "Kelvin", "Fahrenheit"};
         
         this.unitTypes.put("Longitud", longitudesOptions);
@@ -75,6 +75,7 @@ public class UnitConverter {
     
     private void loadRates() {
         this.conversionRates.put("Kilometros-Metros", new Double(1000));
-        this.conversionRates.put("Kilometros-centimetros", new Double(1000 * 100));
+        this.conversionRates.put("Kilometros-Centimetros", new Double(1000 * 100));
+        this.conversionRates.put("Kilometros-Milimetros", 1e+6);
     }
 }
