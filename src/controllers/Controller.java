@@ -4,11 +4,11 @@ import javax.swing.DefaultComboBoxModel;
 import model.UnitConverter;
 import views.Vista;
 
-public class IndexController {
+public class Controller {
     private final UnitConverter model;
     private final Vista view;
     
-    public IndexController(Vista view, UnitConverter model) {
+    public Controller(Vista view, UnitConverter model) {
         this.model = model;
         this.view = view;
         
