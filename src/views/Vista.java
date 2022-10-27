@@ -44,7 +44,8 @@ public class Vista extends javax.swing.JFrame {
         exitBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(567, 238));
+        setMinimumSize(new java.awt.Dimension(770, 238));
+        setPreferredSize(new java.awt.Dimension(770, 238));
         getContentPane().setLayout(new java.awt.GridBagLayout());
 
         jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
