@@ -37,7 +37,16 @@ public class UnitConverter {
     }
     
     public void setValueToConvert(double value) {
-        this.inputValue = value;
+        if (this.unitTypeSelected.equals("Temperatura")) {
+            this.inputValue = value;
+        } else {
+            if (value < 0) {
+                this.inputValue = 0;
+            } else {
+                this.inputValue = value;
+            }
+        }
+        
     }
     
     public double getConversion() {
@@ -60,6 +69,7 @@ public class UnitConverter {
                 case "Fahrenheit-Kelvin": return ((5 * (this.inputValue - 32))/9) + 273.15;
             }
         }
+        
         
         double rate = this.conversionRates.get(this.fromUnit + "-" + this.toUnit);
         return this.inputValue * rate;

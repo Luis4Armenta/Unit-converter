@@ -22,6 +22,19 @@ public class ConvertBtnController implements ActionListener{
         try {
             double inputValue = Double.parseDouble(view.inputFieldText.getText());
 
+            String unitTypeSelected = this.view.unitTypesComboBox.getSelectedItem().toString();
+            
+            if (inputValue < 0 && !unitTypeSelected.equals("Temperatura")) {
+                JOptionPane.showMessageDialog(
+                        this.view,
+                        "Estimado usuario, algunas unidades no pueden ser negativas...",
+                        "Input invalido",
+                        JOptionPane.WARNING_MESSAGE
+                );
+             
+                return;
+            }
+            
             this.model.setValueToConvert(inputValue);
             double result = this.model.getConversion();
             
@@ -30,6 +43,9 @@ public class ConvertBtnController implements ActionListener{
             System.err.println(error);
             String messageError = "Por favor, introduce únicamente números...";
             JOptionPane.showMessageDialog(this.view, messageError, "Error", JOptionPane.WARNING_MESSAGE);
+        } catch (Exception error) {
+            System.err.println(error);
+            JOptionPane.showMessageDialog(this.view, error, "Error", JOptionPane.WARNING_MESSAGE);
         }
     }
     
