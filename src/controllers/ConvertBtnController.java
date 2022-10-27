@@ -33,8 +33,8 @@ public class ConvertBtnController implements ActionListener{
             this.model.setValueToConvert(inputValue);
             
             double result = this.model.getConversion();
-           
-            view.outputFieldText.setText(String.valueOf(new DecimalFormat("#.000").format(result)));
+           //new DecimalFormat("#.000").format(result)
+            view.outputFieldText.setText(String.valueOf(result));
         } catch (Exception error) {
             if (error instanceof NumberFormatException) {
                 String messageError = "Por favor, introduce únicamente números...";
