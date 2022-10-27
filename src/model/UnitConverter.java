@@ -74,9 +74,58 @@ public class UnitConverter {
     }
     
     private void loadRates() {
+                this.conversionRates.put("Kilometros-Kilometros", new Double(1));
         this.conversionRates.put("Kilometros-Metros", new Double(1000));
-        this.conversionRates.put("Kilometros-Millas", new Double(1/1.609));
         this.conversionRates.put("Kilometros-Centimetros", new Double(1000 * 100));
         this.conversionRates.put("Kilometros-Milimetros", 1e+6);
+        this.conversionRates.put("Kilometros-Millas", new Double(1/1.609));
+        this.conversionRates.put("Kilometros-Yardas", new Double(1094));
+        this.conversionRates.put("Kilometros-Pies", new Double(3281));
+        this.conversionRates.put("Kilometros-Pulgadas", new Double(39370));
+
+        this.conversionRates.put("Metros-Kilometros", new Double(1/1000));
+        this.conversionRates.put("Metros-Metros", new Double(1));
+        this.conversionRates.put("Metros-Centimetros", new Double(100));
+        this.conversionRates.put("Metros-Milimetros", new Double(1000);
+        this.conversionRates.put("Metros-Millas", new Double(1/1609);
+        this.conversionRates.put("Metros-Yardas", new Double(1.094);
+        this.conversionRates.put("Metros-Pies", new Double(3.281));
+        this.conversionRates.put("Metros-Pulgadas", new Double(39.37);
+
+        // Conversion de unidades de superficie
+
+        this.conversionRates.put("Kilometros cuadrados-Kilometros cuadrados", new Double(1));
+        this.conversionRates.put("Kilometros cuadrados-Hectarias", new Double(100));
+        this.conversionRates.put("Kilometros cuadrados-Metros Cuadrados", 1e+6);
+        this.conversionRates.put("Kilometros cuadrados-Millas cuadradas", new Double(1/2.59);
+        this.conversionRates.put("Kilometros cuadrados-Acres", new Double(247.1));
+        this.conversionRates.put("Kilometros cuadrados-Pies cuadrados", 1.076e+7);
+        this.conversionRates.put("Kilometros cuadrados-Pulgadas cuadradas", 1.55e+9);
+
+
+        this.conversionRates.put("Metros cuadrados-Kilometros cuadrados", 1/1e+6);
+        this.conversionRates.put("Metros cuadrados-Hectarias", new Double(1/10000));
+        this.conversionRates.put("Metros cuadrados-Metros Cuadrados", new Double(1));
+        this.conversionRates.put("Metros cuadrados-Millas cuadradas", new Double(1/2.59e+6));
+        this.conversionRates.put("Metros cuadrados-Acres", new Double(1/4047));
+        this.conversionRates.put("Metros cuadrados-Pies cuadrados", new Double(10.764));
+        this.conversionRates.put("Metros cuadrados-Pulgadas cuadradas", new Double(1550);
+
+        // Conversion desde unidades de masa
+
+        this.conversionRates.put("Toneladas-Toneladas", new Double(1));
+        this.conversionRates.put("Toneladas-Kilogramo", new Double(1000));
+        this.conversionRates.put("Toneladas-Gramo", 1e+6);
+        this.conversionRates.put("Toneladas-Tonelada corta", 1.102);
+        this.conversionRates.put("Toneladas-Libra", new Double(2205));
+        this.conversionRates.put("Toneladas-Onaza", new Double(35270));
+
+        this.conversionRates.put("Kilogramos-Toneladas", new Double(1/1000));
+        this.conversionRates.put("Kilogramos-Kilogramo", new Double(1));
+        this.conversionRates.put("Kilogramos-Gramo", new Double(1000));
+        this.conversionRates.put("Kilogramos-Tonelada corta", double(1/907.2));
+        this.conversionRates.put("Kilogramos-Libra", new Double(2.205));
+        this.conversionRates.put("Kilogramos-Onaza", new Double(35.274));
+
     }
 }
