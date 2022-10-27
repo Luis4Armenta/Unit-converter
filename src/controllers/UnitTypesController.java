@@ -13,14 +13,6 @@ public class UnitTypesController implements ActionListener{
     public UnitTypesController(Vista view, UnitConverter model) {
         this.view = view;
         this.model = model;
-        
-        this.init();
-    }
-    
-    private void init() {
-        String[] types = this.model.getUnitTypes();
-        view.unitTypesComboBox.removeAllItems();
-        view.unitTypesComboBox.setModel(new DefaultComboBoxModel<>(types));
     }
     
     @Override
@@ -28,13 +20,14 @@ public class UnitTypesController implements ActionListener{
        String unitTypeSelected = this.view.unitTypesComboBox.getSelectedItem().toString();
        
        this.model.selectUnitType(unitTypeSelected);
+       
        String[] units = this.model.getUnits();
        
-       this.view.fromUnitComboBox.removeAllItems();
        this.view.fromUnitComboBox.setModel(new DefaultComboBoxModel<>(units));
-       
-       this.view.toUnitComboBox.removeAllItems();
        this.view.toUnitComboBox.setModel(new DefaultComboBoxModel<>(units));
+       
+       this.model.selectFromUnit(units[0]);
+       this.model.selectToUnit(units[0]);
     }
     
 }

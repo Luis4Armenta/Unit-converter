@@ -23,23 +23,13 @@ public class ConvertBtnController implements ActionListener{
             double inputValue = Double.parseDouble(view.inputFieldText.getText());
 
             this.model.setValueToConvert(inputValue);
-
-            String from = view.fromUnitComboBox.getSelectedItem().toString();
-            String to = view.toUnitComboBox.getSelectedItem().toString();
-
-            this.model.selectFromUnit(from);
-            this.model.selectToUnit(to);
-            
-            this.model.setValueToConvert(inputValue);
-            
             double result = this.model.getConversion();
-           //new DecimalFormat("#.000").format(result)
+            
             view.outputFieldText.setText(String.valueOf(result));
-        } catch (Exception error) {
-            if (error instanceof NumberFormatException) {
-                String messageError = "Por favor, introduce únicamente números...";
-                JOptionPane.showMessageDialog(this.view, messageError, "Error", JOptionPane.WARNING_MESSAGE);
-            }
+        } catch (NumberFormatException error) {
+            System.err.println(error);
+            String messageError = "Por favor, introduce únicamente números...";
+            JOptionPane.showMessageDialog(this.view, messageError, "Error", JOptionPane.WARNING_MESSAGE);
         }
     }
     

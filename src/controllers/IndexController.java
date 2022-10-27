@@ -12,6 +12,7 @@ public class IndexController {
         this.model = model;
         this.view = view;
         
+        
         this.setComportamentOfComponents();
         this.setDefaultSettings();
     }
@@ -20,25 +21,20 @@ public class IndexController {
         UnitTypesController unitTypesComboBoxController = new UnitTypesController(this.view, this.model);
         ConvertBtnController convertBtnController = new ConvertBtnController(this.view, this.model);
         ExitBtnController exitbtnController = new ExitBtnController(this.view, this.model);
+        FromComboBoxController from = new FromComboBoxController(view, model);
+        ToComboBoxController to = new ToComboBoxController(model, view);
         
         this.view.unitTypesComboBox.addActionListener(unitTypesComboBoxController);
         this.view.convertBtn.addActionListener(convertBtnController);
         this.view.exitBtn.addActionListener(exitbtnController);
+        this.view.fromUnitComboBox.addActionListener(from);
+        this.view.toUnitComboBox.addActionListener(to);
     }
     
     private void setDefaultSettings() {
-        this.model.selectUnitType("Longitud");
-        this.view.unitTypesComboBox.setSelectedItem("Longitud");
+        String[] unitTypes = this.model.getUnitTypes();
+        this.view.unitTypesComboBox.setModel(new DefaultComboBoxModel<>(unitTypes));
         
-        String first = this.view.unitTypesComboBox.getSelectedItem().toString();
-        this.model.selectUnitType(first);
-        
-        String[] units = this.model.getUnits();
-        
-        this.view.fromUnitComboBox.removeAllItems();
-        this.view.fromUnitComboBox.setModel(new DefaultComboBoxModel<>(units));
-        
-        this.view.toUnitComboBox.removeAllItems();
-        this.view.toUnitComboBox.setModel(new DefaultComboBoxModel<>(units));
+        this.view.unitTypesComboBox.setSelectedItem(this.view.unitTypesComboBox.getSelectedItem());
     }
 }
