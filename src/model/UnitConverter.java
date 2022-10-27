@@ -114,6 +114,60 @@ public class UnitConverter {
         this.conversionRates.put("Metros-Yardas", 1.094);
         this.conversionRates.put("Metros-Pies", 3.281);
         this.conversionRates.put("Metros-Pulgadas", 39.37);
+        
+        this.conversionRates.put("Centimetros-Centimetros", 1.0);
+        this.conversionRates.put("Centimetros-Millas", 6.2137e-6);
+        this.conversionRates.put("Centimetros-Yardas", 0.0109361);
+        this.conversionRates.put("Centimetros-Pies", 0.0328084);
+        this.conversionRates.put("Centimetros-Pulgadas", 0.393701);
+        this.conversionRates.put("Centimetros-Kilometros", 1e-5);
+        this.conversionRates.put("Centimetros-Metros", 0.01);
+        this.conversionRates.put("Centimetros-Milimetros", 10.0);
+
+        this.conversionRates.put("Milimetros-Milimetros", 1.0 );
+        this.conversionRates.put("Milimetros-Kilometros",  1e-6);
+        this.conversionRates.put("Milimetros-Metros", 0.001);
+        this.conversionRates.put("Milimetros-Centimetros", 0.1);
+        this.conversionRates.put("Milimetros-Millas", 6.2137e-7);
+        this.conversionRates.put("Milimetros-Yardas", 0.00109361);   
+        this.conversionRates.put("Milimetros-Pies",  0.00328084);
+        this.conversionRates.put("Milimetros-Pulgadas",  0.0393701);
+
+        this.conversionRates.put("Millas-Millas", 1.0 );
+        this.conversionRates.put("Millas-Kilometros",  1.60934);
+        this.conversionRates.put("Millas-Metros", 1609.34);
+        this.conversionRates.put("Millas-Centimetros", 160934.0);
+        this.conversionRates.put("Millas-Milimetros", 1.609e+6);
+        this.conversionRates.put("Millas-Yardas", 1760.0);   
+        this.conversionRates.put("Millas-Pies",  5280.0);
+        this.conversionRates.put("Millas-Pulgadas",  63360.0);
+
+        this.conversionRates.put("Yardas-Yardas", 1.0 );
+        this.conversionRates.put("Yardas-Kilometros",  0.0009144);
+        this.conversionRates.put("Yardas-Metros", 0.9144);
+        this.conversionRates.put("Yardas-Centimetros", 91.44);
+        this.conversionRates.put("Yardas-Milimetros", 914.4);
+        this.conversionRates.put("Yardas-Millas", 0.000568182);   
+        this.conversionRates.put("Yardas-Pies",  3.0);
+        this.conversionRates.put("Yardas-Pulgadas",  36.0);
+
+        this.conversionRates.put("Pies-Pies", 1.0 );
+        this.conversionRates.put("Pies-Kilometros",  0.0003048);
+        this.conversionRates.put("Pies-Metros", 0.3048);
+        this.conversionRates.put("Pies-Centimetros", 30.48);
+        this.conversionRates.put("Pies-Milimetros", 304.8);
+        this.conversionRates.put("Pies-Millas", 0.000189394);   
+        this.conversionRates.put("Pies-Yardas",  0.333333);
+        this.conversionRates.put("Pies-Pulgadas",  12.0);
+
+        this.conversionRates.put("Pulgadas-Pulgadas", 1.0 );
+        this.conversionRates.put("Pulgadas-Kilometros",  2.54e-5);
+        this.conversionRates.put("Pulgadas-Metros", 0.0254);
+        this.conversionRates.put("Pulgadas-Centimetros", 2.54);
+        this.conversionRates.put("Pulgadas-Milimetros", 25.4);
+        this.conversionRates.put("Pulgadas-Millas", 1.5783e-5);   
+        this.conversionRates.put("Pulgadas-Yardas",  0.0277778);
+        this.conversionRates.put("Pulgadas-Pies",  0.0833333);
 
         // Conversion de unidades de superficie
 
