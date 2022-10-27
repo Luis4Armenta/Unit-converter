@@ -71,16 +71,19 @@ public class UnitConverter {
         String[] volumenOptions = {"Metros cubicos", "Centimetros cubicos", "Litros", "Mililitros", "Barriles",
             "Galones", "Pintas", "Onzas liquidas"};
         String[] temperatureOptions = {"Celsius", "Kelvin", "Fahrenheit"};
+        String[] speedOptions = {"Km/s", "m/s", "Km/hr", "Milla/s", "Milla/hr",
+        "Pies/s", "Nudos"};
         
         this.unitTypes.put("Longitud", longitudesOptions);
         this.unitTypes.put("Peso", weightOptions);
         this.unitTypes.put("Temperatura", temperatureOptions);
         this.unitTypes.put("Superficie", areaOptions);
         this.unitTypes.put("Volumen", volumenOptions);
+        this.unitTypes.put("velocidad", speedOptions);
     }
     
     private void loadRates() {
-                this.conversionRates.put("Kilometros-Kilometros", new Double(1));
+        this.conversionRates.put("Kilometros-Kilometros", new Double(1));
         this.conversionRates.put("Kilometros-Metros", new Double(1000));
         this.conversionRates.put("Kilometros-Centimetros", new Double(1000 * 100));
         this.conversionRates.put("Kilometros-Milimetros", 1e+6);
@@ -155,6 +158,12 @@ public class UnitConverter {
 
         // Conversion de unidades de velocidad
         
-        
+        this.conversionRates.put("Km/s-Km/s", 1.0);
+        this.conversionRates.put("Km/s-m/s", 1000.0);
+        this.conversionRates.put("Km/s-Km/hr", 3600.0);
+        this.conversionRates.put("Km/s-Milla/s", 0.62137119223733);
+        this.conversionRates.put("Km/s-Milla/h", 2236.9362920544);
+        this.conversionRates.put("Km/s-Pie/s", 3280.8398950131);
+        this.conversionRates.put("Km/s-Nudos", 1943.861717893);
     }
 }
