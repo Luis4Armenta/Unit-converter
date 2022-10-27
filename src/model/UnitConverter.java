@@ -165,5 +165,13 @@ public class UnitConverter {
         this.conversionRates.put("Km/s-Milla/h", 2236.9362920544);
         this.conversionRates.put("Km/s-Pie/s", 3280.8398950131);
         this.conversionRates.put("Km/s-Nudos", 1943.861717893);
+        
+        this.conversionRates.put("m/s-Km/s", 0.001);
+        this.conversionRates.put("m/s-m/s", 1.0);
+        this.conversionRates.put("m/s-Km/hr", 3.6);
+        this.conversionRates.put("m/s-Milla/s", 0.00062137119223733);
+        this.conversionRates.put("m/s-Milla/h", 2236.9362920544);
+        this.conversionRates.put("m/s-Pie/s", 2.2369362920544);
+        this.conversionRates.put("m/s-Nudos", 1.9438461717893);
     }
 }
