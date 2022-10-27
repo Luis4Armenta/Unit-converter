@@ -150,6 +150,34 @@ public class UnitConverter {
         this.conversionRates.put("Kilogramos-Libras", 2.205);
         this.conversionRates.put("Kilogramos-Onazas", 35.274);
 
+        this.conversionRates.put("Gramos-Gramos", 1.0);
+        this.conversionRates.put("Gramos-Kilogramos", 1/1000.0);
+        this.conversionRates.put("Gramos-Toneladas", 0.000001);
+        this.conversionRates.put("Gramos-Toneladas cortas", 0.0000011023);
+        this.conversionRates.put("Gramos-Libras", 0.0022046226);
+        this.conversionRates.put("Gramos-Onzas", 0.0352739619);
+
+        this.conversionRates.put("Toneladas cortas-Toneladas cortas", 1.0 );
+        this.conversionRates.put("Toneladas cortas-Gramos",  907194.048807039826);
+        this.conversionRates.put("Toneladas cortas-Kilogramos", 907.194048807039826);
+        this.conversionRates.put("Toneladas cortas-Toneladas", 0.907194048807039826);
+        this.conversionRates.put("Toneladas cortas-Libras", 2000.0205025855030394996676);
+        this.conversionRates.put("Toneladas cortas-Onzas", 32000.3283135262632741066294);   
+
+        this.conversionRates.put("Libras-Libras", 1.0);   
+        this.conversionRates.put("Libras-Gramos", 453.592374495299);   
+        this.conversionRates.put("Libras-Kilogramos", 0.453592374495299);   
+        this.conversionRates.put("Libras-Toneladas", 0.000453592374495299);   
+        this.conversionRates.put("Libras-Toneladas cortas", 0.0004999948744061680877);   
+        this.conversionRates.put("Libras-Onzas", 16.0000001360777086551081);   
+
+        this.conversionRates.put("Onzas-Onzas", 1.0);   
+        this.conversionRates.put("Onzas-Gramos", 28.349523164848);   
+        this.conversionRates.put("Onzas-Kilogramos", 0.028349523164848);   
+        this.conversionRates.put("Onzas-Toneladas", 0.000028349523164848);   
+        this.conversionRates.put("Onzas-Toneladas cortas", 0.0000312496793846119504);   
+        this.conversionRates.put("Onzas-Libras", 0.0624999994684474263648);
+        
         // Conversion de unidades de volumen
         
         this.conversionRates.put("Metros cubicos-Metros cubicos", 1.0);
