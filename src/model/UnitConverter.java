@@ -143,6 +143,18 @@ public class UnitConverter {
         this.conversionRates.put("Metros cubicos-Galones", new Double(264.2));
         this.conversionRates.put("Metros cubicos-Pintas", new Double(2113));
         this.conversionRates.put("Metros cubicos-Onzas liquidas", new Double(33810));
+        
+        this.conversionRates.put("Litros-Metros cubicos", 0.001);
+        this.conversionRates.put("Litros-Litros", 1.0);
+        this.conversionRates.put("Litros-Centimetros cubicos", 1000.0);
+        this.conversionRates.put("Litros-Mililitros", 1000.0);
+        this.conversionRates.put("Litros-Barriles", 158.98);
+        this.conversionRates.put("Litros-Galones", 1/3.785);
+        this.conversionRates.put("Litros-Pintas", 2.113);
+        this.conversionRates.put("Litros-Onzas liquidas", 33.814);
 
+        // Conversion de unidades de velocidad
+        
+        
     }
 }
