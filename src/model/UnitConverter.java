@@ -68,12 +68,15 @@ public class UnitConverter {
         String[] areaOptions = {"Kilometros cuadrados", "Hectareas", "Metros cuadrados",
             "Millas cuadradas", "Acres", "Pies cuadrados", "Pulgadas cuadradas"};
         String[] weightOptions = {"Toneladas", "Kilogramos", "Gramos", "Toneladas cortas", "Libras", "Onzas"};
+        String[] volumenOptions = {"Metros cubicos", "Centimetros cubicos", "Litros", "Mililitros", "Barriles",
+            "Galones", "Pintas", "Onzas liquidas"};
         String[] temperatureOptions = {"Celsius", "Kelvin", "Fahrenheit"};
         
         this.unitTypes.put("Longitud", longitudesOptions);
         this.unitTypes.put("Peso", weightOptions);
         this.unitTypes.put("Temperatura", temperatureOptions);
         this.unitTypes.put("Superficie", areaOptions);
+        this.unitTypes.put("Volumen", volumenOptions);
     }
     
     private void loadRates() {
@@ -129,6 +132,17 @@ public class UnitConverter {
         this.conversionRates.put("Kilogramos-Toneladas cortas", new Double(1/907.2));
         this.conversionRates.put("Kilogramos-Libras", new Double(2.205));
         this.conversionRates.put("Kilogramos-Onazas", new Double(35.274));
+
+        // Conversion de unidades de volumen
+        
+        this.conversionRates.put("Metros cubicos-Metros cubicos", new Double(1));
+        this.conversionRates.put("Metros cubicos-Litros", new Double(1000));
+        this.conversionRates.put("Metros cubicos-Centimetros cubicos", 1e+6);
+        this.conversionRates.put("Metros cubicos-Mililitros", 1e+6);
+        this.conversionRates.put("Metros cubicos-Barriles", new Double(6.29));
+        this.conversionRates.put("Metros cubicos-Galones", new Double(264.2));
+        this.conversionRates.put("Metros cubicos-Pintas", new Double(2113));
+        this.conversionRates.put("Metros cubicos-Onzas liquidas", new Double(33810));
 
     }
 }
