@@ -6,8 +6,8 @@ import model.UnitConverter;
 import views.Vista;
 
 public class FromComboBoxController implements ActionListener {
-    private Vista view;
-    private UnitConverter model;
+    private final Vista view;
+    private final UnitConverter model;
     
     public FromComboBoxController(Vista view, UnitConverter model) {
         this.model = model;

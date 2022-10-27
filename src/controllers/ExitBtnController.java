@@ -6,8 +6,8 @@ import model.UnitConverter;
 import views.Vista;
 
 public class ExitBtnController implements ActionListener{
-    private Vista view;
-    private UnitConverter model;
+    private final Vista view;
+    private final UnitConverter model;
     
     public ExitBtnController(Vista view, UnitConverter model) {
         this.view = view;

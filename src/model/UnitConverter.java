@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.*;
 
 public class UnitConverter {
-    private HashMap<String, String[]> unitTypes = new HashMap<>();
-    HashMap<String, Double> conversionRates = new HashMap<>();
+    private final HashMap<String, String[]> unitTypes = new HashMap<>();
+    private final HashMap<String, Double> conversionRates = new HashMap<>();
     
     private String unitTypeSelected;
     

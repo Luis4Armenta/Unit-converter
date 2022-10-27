@@ -9,8 +9,8 @@ import views.Vista;
 
 
 public class ConvertBtnController implements ActionListener{
-    Vista view;
-    UnitConverter model;
+    private final Vista view;
+    private final UnitConverter model;
     
     public ConvertBtnController(Vista view, UnitConverter model) {
         this.view = view;

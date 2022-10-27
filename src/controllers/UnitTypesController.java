@@ -7,8 +7,8 @@ import views.Vista;
 import model.UnitConverter;
 
 public class UnitTypesController implements ActionListener{
-    Vista view;
-    UnitConverter model;
+    private final Vista view;
+    private final UnitConverter model;
     
     public UnitTypesController(Vista view, UnitConverter model) {
         this.view = view;
