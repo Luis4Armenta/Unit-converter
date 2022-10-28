@@ -197,6 +197,46 @@ public class UnitConverter {
         this.conversionRates.put("Metros cuadrados-Acres", 1/4047 + 0.0);
         this.conversionRates.put("Metros cuadrados-Pies cuadrados", 10.764);
         this.conversionRates.put("Metros cuadrados-Pulgadas cuadradas", 1550.0);
+        
+        this.conversionRates.put("Hectareas-Metros cuadrados", 10000.0);
+        this.conversionRates.put("Hectareas-Kilometros cuadrados", 0.01);
+        this.conversionRates.put("Hectareas-Hectareas", 1.0);
+        this.conversionRates.put("Hectareas-Millas cuadradas", 0.003861);
+        this.conversionRates.put("Hectareas-Acres", 2.471);
+        this.conversionRates.put("Hectareas-Pies cuadrados", 107639.104);
+        this.conversionRates.put("Hectareas-Pulgadas cuadradas", 15500031.0);
+
+        this.conversionRates.put("Millas cuadradas-Metros cuadrados", 2590002.59000259000259);
+        this.conversionRates.put("Millas cuadradas-Kilometros cuadrados", 2.59000259000259000259);
+        this.conversionRates.put("Millas cuadradas-Hectareas", 259.000259000259000259);
+        this.conversionRates.put("Millas cuadradas-Millas cuadradas", 1.0);
+        this.conversionRates.put("Millas cuadradas-Acres", 639.989639989639989639989);
+        this.conversionRates.put("Millas cuadradas-Pies cuadrados", 27878555.814555814);
+        this.conversionRates.put("Millas cuadradas-Pulgadas cuadradas", 4014512043.5120435120);
+
+        this.conversionRates.put("Acres-Metros cuadrados", 4046.9445568595);
+        this.conversionRates.put("Acres-Kilometros cuadrados", 0.004046944556);
+        this.conversionRates.put("Acres-Hectareas", 0.404694455685);
+        this.conversionRates.put("Acres-Millas cuadradas", 0.00156252529340);
+        this.conversionRates.put("Acres-Acres", 1.0);
+        this.conversionRates.put("Acres-Pies cuadrados", 43560.9486038041);
+        this.conversionRates.put("Acres-Pulgadas cuadradas", 6272776.6086604613);
+
+        this.conversionRates.put("Pies cuadrados-Metros cuadrados", 0.092903040144221);
+        this.conversionRates.put("Pies cuadrados-Kilometros cuadrados", 0.000000092903);
+        this.conversionRates.put("Pies cuadrados-Hectareas", 0.0000092903);
+        this.conversionRates.put("Pies cuadrados-Millas cuadradas", 0.00000003587004881916);
+        this.conversionRates.put("Pies cuadrados-Acres", 0.000022957);
+        this.conversionRates.put("Pies cuadrados-Pies cuadrados", 1.0);
+        this.conversionRates.put("Pies cuadrados-Pulgadas cuadradas", 43560.0);
+
+        this.conversionRates.put("Pulgadas cuadradas-Metros cuadrados", 0.00064516);
+        this.conversionRates.put("Pulgadas cuadradas-Kilometros cuadrados", 0.00000000064516);
+        this.conversionRates.put("Pulgadas cuadradas-Hectareas", 0.000000064516);
+        this.conversionRates.put("Pulgadas cuadradas-Millas cuadradas", 0.0000000002491);
+        this.conversionRates.put("Pulgadas cuadradas-Acres", 0.00000015942400648);
+        this.conversionRates.put("Pulgadas cuadradas-Pies cuadrados", 0.00694450972226881829);
+        this.conversionRates.put("Pulgadas cuadradas-Pulgadas cuadradas", 1.0);
 
         // Conversion desde unidades de masa
 
@@ -262,6 +302,60 @@ public class UnitConverter {
         this.conversionRates.put("Litros-Pintas", 2.113);
         this.conversionRates.put("Litros-Onzas liquidas", 33.814);
 
+        this.conversionRates.put("Centimetros cubicos-Metros cubicos", 0.000001);
+        this.conversionRates.put("Centimetros cubicos-Litros", 0.001);
+        this.conversionRates.put("Centimetros cubicos-Centimetros cubicos", 1.0);
+        this.conversionRates.put("Centimetros cubicos-Mililitros", 1.0);
+        this.conversionRates.put("Centimetros cubicos-Barriles",  0.0000062898107704321);
+        this.conversionRates.put("Centimetros cubicos-Galones", 0.0002641720524);
+        this.conversionRates.put("Centimetros cubicos-Pintas", 0.0021133764188652);
+        this.conversionRates.put("Centimetros cubicos-Onzas liquidas", 0.0341646737274);
+
+        this.conversionRates.put("Mililitros-Metros cubicos", 0.000001);
+        this.conversionRates.put("Mililitros-Litros", 0.001);
+        this.conversionRates.put("Mililitros-Centimetros cubicos", 1.0);
+        this.conversionRates.put("Mililitros-Mililitros", 1.0);
+        this.conversionRates.put("Mililitros-Barriles", 0.0000062898107704321);
+        this.conversionRates.put("Mililitros-Galones", 0.0002641720524);
+        this.conversionRates.put("Mililitros-Pintas", 0.0021133764188652);
+        this.conversionRates.put("Mililitros-Onzas liquidas", 0.0341646737274);
+
+        this.conversionRates.put("Barriles-Metros cubicos", 0.158987294928);
+        this.conversionRates.put("Barriles-Litros", 158.987294928);
+        this.conversionRates.put("Barriles-Centimetros cubicos", 158987.294928);
+        this.conversionRates.put("Barriles-Mililitros", 158987.294928);
+        this.conversionRates.put("Barriles-Barriles", 1.0);
+        this.conversionRates.put("Barriles-Galones", 42.0);
+        this.conversionRates.put("Barriles-Pintas", 336.0);
+        this.conversionRates.put("Barriles-Onzas liquidas", 5376.0);
+
+        this.conversionRates.put("Galones-Metros cubicos", 0.00378542117834);
+        this.conversionRates.put("Galones-Litros", 3.7854117834);
+        this.conversionRates.put("Galones-Centimetros cubicos", 3785.4117834);
+        this.conversionRates.put("Galones-Mililitros", 3785.4117834);
+        this.conversionRates.put("Galones-Barriles", 0.023809523809524);
+        this.conversionRates.put("Galones-Galones", 1.0);
+        this.conversionRates.put("Galones-Pintas", 8.0);
+        this.conversionRates.put("Galones-Onzas liquidas", 129.32735850371635944516);
+
+        this.conversionRates.put("Pintas-Metros cubicos", 0.000473176473);
+        this.conversionRates.put("Pintas-Litros", 0.473176473);
+        this.conversionRates.put("Pintas-Centimetros cubicos", 473.176473);
+        this.conversionRates.put("Pintas-Mililitros", 473.176473);
+        this.conversionRates.put("Pintas-Barriles", 0.0029761904761905);
+        this.conversionRates.put("Pintas-Galones",   0.125);
+        this.conversionRates.put("Pintas-Pintas", 1.0);
+        this.conversionRates.put("Pintas-Onzas liquidas", 16.0);
+
+        this.conversionRates.put("Onzas liquidas-Metros cubicos", 0.00002927);
+        this.conversionRates.put("Onzas liquidas-Litros", 0.02927);
+        this.conversionRates.put("Onzas liquidas-Centimetros cubicos", 29.27);
+        this.conversionRates.put("Onzas liquidas-Mililitros", 29.27);
+        this.conversionRates.put("Onzas liquidas-Barriles", 0.0001860119047619);
+        this.conversionRates.put("Onzas liquidas-Galones", 0.007732315973748);
+        this.conversionRates.put("Onzas liquidas-Pintas", 0.0625);
+        this.conversionRates.put("Onzas liquidas-Onzas liquidas", 1.0);
+        
         // Conversion de unidades de velocidad
         
         this.conversionRates.put("Km/s-Km/s", 1.0);
@@ -279,5 +373,45 @@ public class UnitConverter {
         this.conversionRates.put("m/s-Milla/hr", 2236.9362920544);
         this.conversionRates.put("m/s-Pie/s", 2.2369362920544);
         this.conversionRates.put("m/s-Nudos", 1.9438461717893);
+        
+        this.conversionRates.put("Km/hr-Km/hr", 1.0);
+        this.conversionRates.put("Km/hr-Km/s", 0.000277777777777778);
+        this.conversionRates.put("Km/hr-m/s", 0.277777777777778);
+        this.conversionRates.put("Km/hr-Milla/s", 0.000173);
+        this.conversionRates.put("Km/hr-Milla/hr", 0.621371111111111608208);
+        this.conversionRates.put("Km/hr-Pie/s", 0.911344);
+        this.conversionRates.put("Km/hr-Nudos", 0.539957);
+
+        this.conversionRates.put("Millas/s-Millas/s", 1.0);
+        this.conversionRates.put("Millas/s-m/s", 1609.34);
+        this.conversionRates.put("Millas/s-Km/s", 1.61);
+        this.conversionRates.put("Millas/s-Km/hr", 5793.64);
+        this.conversionRates.put("Millas/s-Millas/hr", 3600.0);
+        this.conversionRates.put("Millas/s-Pie/s", 5280.0);
+        this.conversionRates.put("Millas/s-Nudos", 3128.31);
+
+        this.conversionRates.put("Millas/hr-Millas/hr", 1.0);
+        this.conversionRates.put("Millas/hr-m/s", 0.45);
+        this.conversionRates.put("Millas/hr-Km/s", 0.00045);
+        this.conversionRates.put("Millas/hr-Km/hr", 1.60934);
+        this.conversionRates.put("Millas/hr-Millas/s", 27800.0);
+        this.conversionRates.put("Millas/hr-Pie/s", 1.46667);
+        this.conversionRates.put("Millas/hr-Nudos", 0.868976);
+
+        this.conversionRates.put("Pie/s-Pies/s", 1.0);
+        this.conversionRates.put("Pie/s-m/s", 0.3);
+        this.conversionRates.put("Pie/s-Km/s", 0.000305);
+        this.conversionRates.put("Pie/s-Km/hr", 1.1);
+        this.conversionRates.put("Pie/s-Millas/s", 18900.0);
+        this.conversionRates.put("Pie/s-Millas/hr", 0.68);
+        this.conversionRates.put("Pie/s-Nudos", 0.592484);
+
+        this.conversionRates.put("Nudos-Nudos", 1.0);
+        this.conversionRates.put("Nudos-m/s", 0.51);
+        this.conversionRates.put("Nudos-Km/s", 0.000514444);
+        this.conversionRates.put("Nudos-Km/hr", 1.8519984);
+        this.conversionRates.put("Nudos-Millas/s",  0.00031966068161934);
+        this.conversionRates.put("Nudos-Pie/s", 1.6878083989501);
+        this.conversionRates.put("Nudos-Millas/hr", 1.15);
     }
 }

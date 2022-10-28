@@ -38,7 +38,7 @@ public class ConvertBtnController implements ActionListener{
             this.model.setValueToConvert(inputValue);
             double result = this.model.getConversion();
             
-            view.outputFieldText.setText(String.valueOf(result));
+            view.outputFieldText.setText(String.format("%.4f", result));
         } catch (NumberFormatException error) {
             System.err.println(error);
             String messageError = "Por favor, introduce únicamente números...";
