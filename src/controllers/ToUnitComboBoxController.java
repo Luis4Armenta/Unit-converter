@@ -5,11 +5,11 @@ import java.awt.event.ActionListener;
 import model.UnitConverter;
 import views.Vista;
 
-public class ToComboBoxController implements ActionListener {
+public class ToUnitComboBoxController implements ActionListener {
     private final Vista view;
     private final UnitConverter model;
     
-    public ToComboBoxController(UnitConverter model, Vista view) {
+    public ToUnitComboBoxController(UnitConverter model, Vista view) {
         this.model = model;
         this.view = view;
     }

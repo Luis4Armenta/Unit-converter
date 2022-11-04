@@ -5,20 +5,18 @@ import java.awt.event.ActionListener;
 import model.UnitConverter;
 import views.Vista;
 
-public class FromComboBoxController implements ActionListener {
+public class ExitButtonController implements ActionListener{
     private final Vista view;
     private final UnitConverter model;
     
-    public FromComboBoxController(Vista view, UnitConverter model) {
-        this.model = model;
+    public ExitButtonController(Vista view, UnitConverter model) {
         this.view = view;
+        this.model = model;
     }
-    
+
     @Override
     public void actionPerformed(ActionEvent e) {
-        String selection = this.view.fromUnitComboBox.getSelectedItem().toString();
-        
-        this.model.selectFromUnit(selection);
+        System.exit(0);
     }
     
 }

@@ -36,7 +36,7 @@ public class UnitConverter {
         this.toUnit = toUnitSelected;
     }
     
-    public void setValueToConvert(double value) {
+    public void setInput(double value) {
         if (this.unitTypeSelected.equals("Temperatura")) {
             this.inputValue = value;
         } else {
@@ -49,7 +49,7 @@ public class UnitConverter {
         
     }
     
-    public double getConversion() {
+    public double getOutput() {
         this.conversion = this.convert();
         
         return conversion;

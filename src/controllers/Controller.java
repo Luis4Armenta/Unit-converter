@@ -18,11 +18,11 @@ public class Controller {
     }
     
     private void setComportamentOfComponents() {
-        UnitTypesController unitTypesComboBoxController = new UnitTypesController(this.view, this.model);
-        ConvertBtnController convertBtnController = new ConvertBtnController(this.view, this.model);
-        ExitBtnController exitbtnController = new ExitBtnController(this.view, this.model);
-        FromComboBoxController from = new FromComboBoxController(view, model);
-        ToComboBoxController to = new ToComboBoxController(model, view);
+        UnitTypesComboBoxController unitTypesComboBoxController = new UnitTypesComboBoxController(this.view, this.model);
+        ConvertButtonController convertBtnController = new ConvertButtonController(this.view, this.model);
+        ExitButtonController exitbtnController = new ExitButtonController(this.view, this.model);
+        FromUnitComboBoxController from = new FromUnitComboBoxController(view, model);
+        ToUnitComboBoxController to = new ToUnitComboBoxController(model, view);
         
         this.view.unitTypesComboBox.addActionListener(unitTypesComboBoxController);
         this.view.convertBtn.addActionListener(convertBtnController);

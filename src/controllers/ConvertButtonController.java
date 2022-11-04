@@ -8,11 +8,11 @@ import javax.swing.JOptionPane;
 import views.Vista;
 
 
-public class ConvertBtnController implements ActionListener{
+public class ConvertButtonController implements ActionListener{
     private final Vista view;
     private final UnitConverter model;
     
-    public ConvertBtnController(Vista view, UnitConverter model) {
+    public ConvertButtonController(Vista view, UnitConverter model) {
         this.view = view;
         this.model = model;
     }
@@ -35,8 +35,8 @@ public class ConvertBtnController implements ActionListener{
                 return;
             }
             
-            this.model.setValueToConvert(inputValue);
-            double result = this.model.getConversion();
+            this.model.setInput(inputValue);
+            double result = this.model.getOutput();
             
             view.outputFieldText.setText(String.format("%.4f", result));
         } catch (NumberFormatException error) {
