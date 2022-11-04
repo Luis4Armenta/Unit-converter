@@ -22,7 +22,7 @@ public class ConvertidorDeUnidades {
         view.setTitle("CONVERTIDOR DE UNIDADES");
         view.setLocationRelativeTo(null);
         
-        titlePage.jButton1.addActionListener(new ActionListener() {
+        titlePage.continueButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 titlePage.setVisible(false);
@@ -31,4 +31,4 @@ public class ConvertidorDeUnidades {
         });
     }
     
-}
+} // Fin de la clase principal
