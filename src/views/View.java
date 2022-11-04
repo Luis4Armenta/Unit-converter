@@ -16,6 +16,7 @@ public class View extends javax.swing.JFrame {
      */
     public View() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -44,6 +45,7 @@ public class View extends javax.swing.JFrame {
         exitBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("CONVERTIDOR DE UNIDADES");
         setMinimumSize(new java.awt.Dimension(770, 238));
         getContentPane().setLayout(new java.awt.GridBagLayout());
 

@@ -12,15 +12,10 @@ public class ConvertidorDeUnidades {
         Front titlePage = new Front();
         
         titlePage.setVisible(true);
-        titlePage.setTitle("Portada / Convertidor de unidades / Equipo 3");
-        titlePage.setLocationRelativeTo(null);
-        
+
         View view = new View();
         UnitConverter model = new UnitConverter();
         Controller controller = new Controller(view, model);
-        
-        view.setTitle("CONVERTIDOR DE UNIDADES");
-        view.setLocationRelativeTo(null);
         
         titlePage.continueButton.addActionListener(new ActionListener() {
             @Override

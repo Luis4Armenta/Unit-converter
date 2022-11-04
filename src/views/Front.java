@@ -16,6 +16,7 @@ public class Front extends javax.swing.JFrame {
      */
     public Front() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -44,6 +45,7 @@ public class Front extends javax.swing.JFrame {
         continueButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Portada / Convertidor de unidades / Equipo 3");
 
         mainPanel.setLayout(new java.awt.GridBagLayout());
 
