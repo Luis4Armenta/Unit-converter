@@ -1,6 +1,6 @@
 package convertidordeunidades;
 
-import views.Vista;
+import views.View;
 import model.UnitConverter;
 import controllers.Controller;
 import java.awt.event.ActionEvent;
@@ -15,7 +15,7 @@ public class ConvertidorDeUnidades {
         titlePage.setTitle("Portada / Convertidor de unidades / Equipo 3");
         titlePage.setLocationRelativeTo(null);
         
-        Vista view = new Vista();
+        View view = new View();
         UnitConverter model = new UnitConverter();
         Controller controller = new Controller(view, model);
         

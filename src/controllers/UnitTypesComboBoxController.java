@@ -3,14 +3,14 @@ package controllers;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.DefaultComboBoxModel;
-import views.Vista;
+import views.View;
 import model.UnitConverter;
 
 public class UnitTypesComboBoxController implements ActionListener{
-    private final Vista view;
+    private final View view;
     private final UnitConverter model;
     
-    public UnitTypesComboBoxController(Vista view, UnitConverter model) {
+    public UnitTypesComboBoxController(View view, UnitConverter model) {
         this.view = view;
         this.model = model;
     }

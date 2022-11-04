@@ -5,14 +5,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
-import views.Vista;
+import views.View;
 
 
 public class ConvertButtonController implements ActionListener{
-    private final Vista view;
+    private final View view;
     private final UnitConverter model;
     
-    public ConvertButtonController(Vista view, UnitConverter model) {
+    public ConvertButtonController(View view, UnitConverter model) {
         this.view = view;
         this.model = model;
     }

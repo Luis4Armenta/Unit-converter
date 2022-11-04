@@ -2,13 +2,13 @@ package controllers;
 
 import javax.swing.DefaultComboBoxModel;
 import model.UnitConverter;
-import views.Vista;
+import views.View;
 
 public class Controller {
     private final UnitConverter model;
-    private final Vista view;
+    private final View view;
     
-    public Controller(Vista view, UnitConverter model) {
+    public Controller(View view, UnitConverter model) {
         this.model = model;
         this.view = view;
         
