@@ -60,7 +60,7 @@ public class Front extends javax.swing.JFrame {
         mainPanel.add(headerLabel, gridBagConstraints);
 
         teamLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        teamLabel.setText("Equipo 3");
+        teamLabel.setText("Equipo 3 - 2CM20");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
@@ -108,7 +108,7 @@ public class Front extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(3, 5, 3, 5);
         mainPanel.add(nameLabel5, gridBagConstraints);
 
-        percent1.setText("%");
+        percent1.setText("20%");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 2;
@@ -116,7 +116,7 @@ public class Front extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(3, 5, 3, 5);
         mainPanel.add(percent1, gridBagConstraints);
 
-        percent2.setText("%");
+        percent2.setText("20%");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -124,7 +124,7 @@ public class Front extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(3, 5, 3, 5);
         mainPanel.add(percent2, gridBagConstraints);
 
-        percent3.setText("%");
+        percent3.setText("20%");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -132,7 +132,7 @@ public class Front extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(3, 5, 3, 5);
         mainPanel.add(percent3, gridBagConstraints);
 
-        percent4.setText("%");
+        percent4.setText("20%");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -140,7 +140,7 @@ public class Front extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(3, 5, 3, 5);
         mainPanel.add(percent4, gridBagConstraints);
 
-        percent5.setText("%");
+        percent5.setText("20%");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 6;

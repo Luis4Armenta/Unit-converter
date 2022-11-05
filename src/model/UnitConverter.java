@@ -86,13 +86,16 @@ public class UnitConverter {
         return this.unitTypes.get((this.unitTypeSelected));
     }
     
+    // Relleno de las opciones de los menus
     private void setUnitTypes() {
-        String[] longitudesOptions = {"Kilometros", "Metros", "Centimetros", "Milimetros", 
-                            "Millas", "Yardas", "Pies", "Pulgadas"};
+        String[] longitudesOptions = {"Kilometros", "Metros", "Centimetros",
+            "Milimetros", "Millas", "Yardas", "Pies", "Pulgadas"};
         String[] areaOptions = {"Kilometros cuadrados", "Hectareas", "Metros cuadrados",
             "Millas cuadradas", "Acres", "Pies cuadrados", "Pulgadas cuadradas"};
-        String[] weightOptions = {"Toneladas", "Kilogramos", "Gramos", "Toneladas cortas", "Libras", "Onzas"};
-        String[] volumenOptions = {"Metros cubicos", "Centimetros cubicos", "Litros", "Mililitros", "Barriles",
+        String[] weightOptions = {"Toneladas", "Kilogramos", "Gramos", "Toneladas cortas",
+            "Libras", "Onzas"};
+        String[] volumenOptions = {"Metros cubicos", "Centimetros cubicos", "Litros",
+            "Mililitros", "Barriles",
             "Galones", "Pintas", "Onzas liquidas"};
         String[] temperatureOptions = {"Celsius", "Kelvin", "Fahrenheit"};
         String[] speedOptions = {"Km/s", "m/s", "Km/hr", "Milla/s", "Milla/hr",
